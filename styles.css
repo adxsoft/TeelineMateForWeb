@@ -86,4 +86,6 @@ canvas {
     font-size: 1rem;
     overflow-wrap: break-word;
     cursor: pointer;
+    overflow-y: scroll;
+    height: 40rem;
 }

@@ -3,12 +3,13 @@ body {
     height: 100%;
     margin: 0;
     padding: 0px;
+    overflow: scroll
 }
 
 .container {
     width: 1920px;
     height: 300px;
-    overflow: auto;
+    overflow: scroll;
     border: 1px solid;
 }
 

@@ -278,7 +278,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'A-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x + 12, y + 6)
             ctx.stroke()
@@ -287,7 +287,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'A-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x + 12, y + 6)
             ctx.stroke()
@@ -296,7 +296,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'ABLE-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 12, prefixYpos + 6)
             ctx.stroke()
@@ -304,7 +304,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'AE-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 12, prefixYpos + 6)
             ctx.stroke()
@@ -312,7 +312,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'AY-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 12, prefixYpos + 6)
             ctx.stroke()
@@ -320,7 +320,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'ANT-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 12, prefixYpos)
             ctx.stroke()
@@ -328,7 +328,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'A-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 4, prefixYpos - 6)
             ctx.stroke()
@@ -339,7 +339,7 @@ function plotSegment(segment, x, y, last) {
         case 'B':
         case 'B-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             if (last[0] == '' || last[0] == ' ') {
                 finalYAdjustment = -13
                 y += finalYAdjustment
@@ -412,7 +412,7 @@ function plotSegment(segment, x, y, last) {
         case 'CH-INDICATOR':
         case 'TCH-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             finalYAdjustment = 0
             finalXAdjustment = 12
 
@@ -428,7 +428,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'CH-PREFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             finalYAdjustment = -12
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x - 12, prefixYpos)
@@ -441,7 +441,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'CH-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x - 6, prefixYpos)
             ctx.stroke()
@@ -452,7 +452,7 @@ function plotSegment(segment, x, y, last) {
             break
         case "CHR-PREFIX":
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             finalXAdjustment = 0
             finalYAdjustment = 0
             radius = 4
@@ -466,7 +466,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'COM-PREFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             finalYAdjustment = -16
             ctx.moveTo(x, prefixYpos + finalYAdjustment)
             ctx.lineTo(x - 12, prefixYpos + finalYAdjustment)
@@ -479,7 +479,7 @@ function plotSegment(segment, x, y, last) {
             break
         case "CM-BLEND":
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             finalXAdjustment = 12
             finalYAdjustment = 0
             ctx.moveTo(x + finalXAdjustment, y + finalYAdjustment)
@@ -494,7 +494,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'CN-BLEND':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             finalXAdjustment = 4
             finalYAdjustment = -6
             radius = 2.5                       // Arc radius
@@ -512,7 +512,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'CON-PREFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             radius = 2.5                       // Arc radius
             ctx.moveTo(x, prefixYpos)
             startAngle = -0.1;             // Starting point on circle
@@ -529,7 +529,7 @@ function plotSegment(segment, x, y, last) {
         case 'D':
         case 'D-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             if (last[0] == 'T' || last[0] == 'D') {
                 finalYAdjustment = 3
                 y += finalYAdjustment
@@ -541,7 +541,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'DN-BLEND':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             if (last[0] == 'T' || last[0] == 'D') {
                 finalYAdjustment = 3
                 y += finalYAdjustment
@@ -567,7 +567,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'DR-BLEND':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             if (last[0] == 'T' || last[0] == 'D') {
                 finalYAdjustment = 3
                 y += finalYAdjustment
@@ -591,7 +591,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'E-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x, y + 12)
             ctx.stroke()
@@ -599,14 +599,14 @@ function plotSegment(segment, x, y, last) {
             break
         case 'E-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x, prefixYpos + 8)
             ctx.stroke()
             break
         case 'EX-PREFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'prefix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 12, prefixYpos - 12)
             ctx.moveTo(x, prefixYpos - 12)
@@ -618,7 +618,7 @@ function plotSegment(segment, x, y, last) {
         case 'F':
         case 'F-ABBR':
             ctx.beginPath() // left arc
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             radius = 36;                       // Arc radius
             startAngle = 1.26 * Math.PI             // Starting point on circle
             endAngle = 1.08 * Math.PI // End point on circle
@@ -637,7 +637,7 @@ function plotSegment(segment, x, y, last) {
             finalYAdjustment = 16
             finalXAdjustment = -8
             ctx.beginPath() // left arc
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             radius = 36;                       // Arc radius
             startAngle = 1.26 * Math.PI             // Starting point on circle
             endAngle = 1.08 * Math.PI // End point on circle
@@ -668,7 +668,7 @@ function plotSegment(segment, x, y, last) {
             finalYAdjustment = -9
 
             ctx.beginPath() // left arc
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             y += 8 // force F across the line to denote FL Blend
             radius = 36;                       // Arc radius
             startAngle = 1.26 * Math.PI             // Starting point on circle
@@ -694,7 +694,7 @@ function plotSegment(segment, x, y, last) {
 
             // F segment
             ctx.beginPath() // left arc
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             radius = 36;                       // Arc radius
             startAngle = 1.26 * Math.PI             // Starting point on circle
             endAngle = 1.08 * Math.PI // End point on circle
@@ -714,7 +714,7 @@ function plotSegment(segment, x, y, last) {
             x += 24
             y -= 1
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             radius = 26;                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 1.94 * Math.PI;             // Starting point on circle
@@ -730,7 +730,7 @@ function plotSegment(segment, x, y, last) {
             break
         case "FR-BLEND":
             ctx.beginPath() // left arc
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
 
             radius = 36;                       // Arc radius
             startAngle = 1.26 * Math.PI             // Starting point on circle
@@ -746,7 +746,7 @@ function plotSegment(segment, x, y, last) {
             ctx.stroke()
 
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + 6, y - 12)
             ctx.lineTo(x + 16, y - 28)
             ctx.stroke()
@@ -776,7 +776,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'G-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + 10, 100 - 40)
             ctx.lineTo(x + 10, 100 - 30)
             ctx.stroke()
@@ -788,7 +788,7 @@ function plotSegment(segment, x, y, last) {
             finalYAdjustment = 0
             // Fixed height segment
             ctx.beginPath()
-            formatSegment(segment, ctx, 'fixed')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + finalXAdjustment + 2, y + finalYAdjustment)
             ctx.lineTo(x + finalXAdjustment + 2, y + finalYAdjustment + 20)
             ctx.stroke()
@@ -807,7 +807,7 @@ function plotSegment(segment, x, y, last) {
             }
             // Fixed height segment
             ctx.beginPath()
-            formatSegment(segment, ctx, 'fixed')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + finalXAdjustment + 2, y + finalYAdjustment - 20)
             ctx.lineTo(x + finalXAdjustment + 2, y + finalYAdjustment)
             ctx.stroke()
@@ -818,7 +818,7 @@ function plotSegment(segment, x, y, last) {
             finalXAdjustment = 0
             finalYAdjustment = 20
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + finalXAdjustment, y + finalYAdjustment - 20)
             ctx.lineTo(x + finalXAdjustment + 6, y + finalYAdjustment)
             ctx.lineTo(x + finalXAdjustment + 10, y + finalYAdjustment - 6)
@@ -840,7 +840,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'I-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x + 8, y - 8)
             ctx.stroke()
@@ -849,7 +849,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'I-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 8, prefixYpos - 8)
             ctx.stroke()
@@ -857,7 +857,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'ING-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + 6, suffixYpos)
             ctx.lineTo(x + 6 + 8, suffixYpos - 8)
             ctx.stroke()
@@ -891,7 +891,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'L':
         case 'L-ABBR':
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             y += 11
             radius = 20;                       // Arc radius
             ctx.beginPath()
@@ -903,7 +903,7 @@ function plotSegment(segment, x, y, last) {
             y += 11
             break
         case 'LR-BLEND':
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             finalXAdjustment = -30
             finalYAdjustment = +8
             radius = 36;                       // Arc radius
@@ -931,7 +931,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'M-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             radius = 6;                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = -0.1;             // Starting point on circle
@@ -944,7 +944,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'MR-BLEND':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             radius = 16;                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 1.9 * Math.PI;             // Starting point on circle
@@ -989,7 +989,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'N-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             radius = 2.5                       // Arc radius
             ctx.moveTo(x, y)
             startAngle = -0.1;             // Starting point on circle
@@ -1006,7 +1006,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'N-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             radius = 2.5                       // Arc radius
             ctx.moveTo(x, prefixYpos)
             startAngle = -0.1;             // Starting point on circle
@@ -1040,7 +1040,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'O-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             radius = 3                       // Arc radius
             ctx.moveTo(x + (radius / 2), prefixYpos)
             startAngle = 1.8 * Math.PI             // Starting point on circle
@@ -1052,7 +1052,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'ONCE-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             radius = 3                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 1.8 * Math.PI             // Starting point on circle
@@ -1064,7 +1064,7 @@ function plotSegment(segment, x, y, last) {
             y -= 8
 
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x - 6, y)
             ctx.stroke()
@@ -1077,7 +1077,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'OUR-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             radius = 3                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 1.8 * Math.PI             // Starting point on circle
@@ -1089,7 +1089,7 @@ function plotSegment(segment, x, y, last) {
             y -= 6
 
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             // allow for R following F
             if (last[0] == 'F') {
                 finalXAdjustment = 6
@@ -1106,7 +1106,7 @@ function plotSegment(segment, x, y, last) {
 
         case 'OUT-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             radius = 3                       // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 1.8 * Math.PI             // Starting point on circle
@@ -1118,7 +1118,7 @@ function plotSegment(segment, x, y, last) {
             y -= 6
 
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             if (last[0] == 'T' || last[0] == 'D') {
                 finalYAdjustment = -4
                 y += finalYAdjustment
@@ -1144,7 +1144,7 @@ function plotSegment(segment, x, y, last) {
         case 'P-ABBR':
             // Fixed height segment
             ctx.beginPath()
-            formatSegment(segment, ctx, 'fixed')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x + 5, 100 - 8)
             ctx.lineTo(x + 5, 100 + 12)
             ctx.stroke()
@@ -1154,7 +1154,7 @@ function plotSegment(segment, x, y, last) {
         case 'PL-BLEND':
             finalXAdjustment = 1
             finalYAdjustment = 10
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             y -= 10 // force L across the line for PL Blend
             radius = 20;                       // Arc radius
             ctx.beginPath()
@@ -1168,7 +1168,7 @@ function plotSegment(segment, x, y, last) {
         case 'Q':
         case 'Q-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'fixed')
+            formatSegment(segment, ctx, '')
             radius = 3                          // Arc radius
             ctx.moveTo(x + (radius / 2), y)
             startAngle = 0;                           // Starting point on circle
@@ -1186,7 +1186,7 @@ function plotSegment(segment, x, y, last) {
         case 'R':
         case 'R-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'darkgrey')
+            formatSegment(segment, ctx, '')
             // allow for R following F
             if (last[0] == 'F') {
                 finalXAdjustment = 6
@@ -1217,7 +1217,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'SH-INDICATOR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'indicator')
+            formatSegment(segment, ctx, '')
             // x += 6
             y -= 10
             radius = 3;                       // Arc radius
@@ -1241,7 +1241,7 @@ function plotSegment(segment, x, y, last) {
         case "TIAL-SUFFIX":
         case "SHL-SUFFIX":
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             x -= 2
             radius = 3;                       // Arc radius
             startAngle = 1.4 * Math.PI          // Starting point on circle
@@ -1260,7 +1260,7 @@ function plotSegment(segment, x, y, last) {
         case "TO-ABBR":
         case 'T-ABBR':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'abbreviation')
+            formatSegment(segment, ctx, '')
             if (last[0] == 'T' || last[0] == 'D') {
                 finalYAdjustment = -4
                 y += finalYAdjustment
@@ -1276,7 +1276,7 @@ function plotSegment(segment, x, y, last) {
             finalXAdjustment = 0
             finalYAdjustment = -20
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y)
             ctx.lineTo(x + 20, y)
             ctx.stroke()
@@ -1289,11 +1289,7 @@ function plotSegment(segment, x, y, last) {
         case 'THE-ABBR':
         case 'THEY-ABBR':
             ctx.beginPath()
-            if (segment.endsWith('-BLEND')) {
-                formatSegment(segment, ctx, 'blend')
-            } else {
-                formatSegment(segment, ctx, 'abbreviation')
-            }
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y - 20)
             ctx.lineTo(x + 20, y - 20)
             ctx.stroke()
@@ -1311,7 +1307,7 @@ function plotSegment(segment, x, y, last) {
             finalXAdjustment = 0
             finalYAdjustment = 0
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, y + finalYAdjustment)
             ctx.lineTo(x + 40, y + finalYAdjustment)
             ctx.stroke()
@@ -1327,7 +1323,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'TR-BLEND':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             var heightadjustment = 5
             ctx.moveTo(x, y - heightadjustment)
             ctx.lineTo(x + 40, y - heightadjustment)
@@ -1355,7 +1351,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'U-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             radius = 2                          // Arc radius
             ctx.moveTo(x + (radius / 2), prefixYpos)
             startAngle = 0                           // Starting point on circle
@@ -1390,7 +1386,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'V-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             ctx.moveTo(x, prefixYpos)
             ctx.lineTo(x + 4, prefixYpos + 6)
             ctx.lineTo(x + 8, prefixYpos)
@@ -1444,7 +1440,7 @@ function plotSegment(segment, x, y, last) {
             finalXAdjustment = 3
             finalYAdjustment = 10
             ctx.beginPath()
-            formatSegment(segment, ctx, 'blend')
+            formatSegment(segment, ctx, '')
             radius = 16                        // Arc radius
             ctx.moveTo(x + (radius / 2) + finalXAdjustment, y + finalYAdjustment)
             startAngle = 2.1 * Math.PI                          // Starting point on circle
@@ -1506,7 +1502,7 @@ function plotSegment(segment, x, y, last) {
             break
         case 'Y-SUFFIX':
             ctx.beginPath()
-            formatSegment(segment, ctx, 'suffix')
+            formatSegment(segment, ctx, '')
             radius = 4                          // Arc radius
             ctx.moveTo(x + (radius / 2), prefixYpos)
             startAngle = 13                           // Starting point on circle
@@ -1899,15 +1895,12 @@ function parseWord(word) {
     }
 
     if (options.useBlends) {
-        // TODO: Check if there are any possible blend replacements in the final compressed word
         result = applyBlendsInCompressedWord(result)
     }
     if (options.useIndicators || options.useSuffixes) {
         result = applyOneLetterIndicatorsAndSuffixes(result, word)
     }
 
-    //TODO: Adding a final segment as a word break ie a space
-    // result.push(' ')
     return result
 
 }
@@ -2029,16 +2022,6 @@ function applyOneLetterIndicatorsAndSuffixes(resultArray, word) {
 
     }
     return newResultArray
-}
-
-function finaliseSubstitutions(wordsArray) {
-    for (let wordnum = 0; wordnum < wordsArray.length; wordnum++) {
-        const element = wordsArray[wordnum];
-
-
-    }
-    // TODO: replacing the [] strings with 
-    return
 }
 
 
@@ -2168,6 +2151,10 @@ function plotSentence(sentence, suppressoptions = false) {
             last[2] += adjustYatWordBoundary(segment, last)
 
             last = plotSegment(segment, last[1], last[2], last)
+
+            if (options.useJoinedLetters == false) {
+                last[1] += 10
+            }
 
             // if (last[0] == ' ' || last[0] == '.' || last[0] == ',') {
             //     last[2] = 100 // reset y when a space, full stop or comma occurs

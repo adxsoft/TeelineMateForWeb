@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title>Teeline Mate v1.0</title>
+    <font size="5">Teeline Mate</font><font size="1">&nbsp;&nbsp;&nbsp;v1.0</font>
+    <div>
+
+
+        <details  class="level1">
+        <summary>FAQ</summary>
+        <details class="level2">
+            <summary>What is Teeline</summary>
+            <div class="details-content">
+                <ul>
+                    <li>Teeline is a shorthand method of writing mainly used in the UK by journalists.</li>
+                    <li>Teeline has a symbol for each letter of the alphabet. Numbers are written as normal and circled in teeline.</li>
+                    <li>Special symbols also exist to simplify the amount of lines required for letter, phrase or full word teeline representation</li>
+                        <ul>
+                            <li><font color="red">Indicators</font> are special symbols that reduce the required lines to represent a letter eg. indicator for letter A is one line whereas the full teeline symbol has two lines</li>
+                            <li><font color="#FF8000">Blends</font> are special symbols that combine two or more letters into a single symbol to increase writing speed</li>
+                            <li><font color="#B8860B">Prefixes</font> are special symbols shown well above the line at <i>the start of a word</i> to denote a word prefix eg a raised <i>c</i> for prefix <i>con</i></li>
+                            <li><font color="#B8860B">Suffixes</font> are special symbols shown well above the line <i>at the end of a word</i> to denote a word suffix eg a raised <i>n</i> for suffix <i>tion</i></li>
+                            <li><font color="#008000">Abbreviations</font> are special symbols representing whole words eg <i>t</i> for <i>it</i></li>
+                        </ul>
+                </ul>
+
+                
+            </div>  
+        </details>
+            <details class="level2">
+                <summary>Basic Use</summary>
+                <div class="details-content">
+                    <ul>
+                    <li>This web page takes any words you enter and displays the corresponding Teeline shorthand.</li>
+                    <li>Simply enter your text and press the <b>Show Teeline</b> button to see the teeline representation at the bottom of the screen.</li>
+                    <li>The entered text is compressed into a phonetic representation which is then displayed as teeline symbols.</li>
+                    <li>All the Teeline letters and words will be displayed with their original text above them</li>
+                    <ul>
+                        <li>Compression will </li>
+                        <ul>
+                        <li>replace double letters with single letters</li>
+                        <li>remove vowels in words</li>
+                        <li>remove unnecessary letters etc</li>
+                        <li>Some examples are</li>
+                        <ul>
+                            <li>'word' becomes 'wrd'</li>
+                            <li>'this' becomes 'ths'</li>
+                            <li>'food' becomes 'fd' etc.</li>    
+                        </ul>
+                    </ul>
+                        <li>Compression can be toggled on or off in <b>Display Options</b></li>
+                    </ul>
+                    <li>To see examples of full sentences then choose <b>-- select a sentence --</b> and it will be displayed using whichever display options have been previously chosen.</li>
+
+                    <li>Press the <b>Clear</b> button to enter some new text.</li>
+                    <li>Press the <b>Alphabet</b> button to see the full Teeline Alphabet.</li>
+                    <li>Press the <b>Special Symbols</b> button to see advanced teeline representations such as <font color="red">indicators</font>, <font color="#B8860B">prefixes</font>, <font color="#B8860B">suffixes</font>, 
+                         and <font color="#FF8000">blends</font></li>
+                    <li>Press the <b>Abbreviated Words</b> button to see words that get abbreviated to a teeline symbol</li>
+
+                </ul>
+                    <!-- TODO: You can see a tutorial for the app on youtube at https://youtu.be/fEdea9KYeZI or search Youtube for "Teeline Mate Video"<br><br> -->
+                </div>
+            </details>
+            <details class="level2">
+                <summary>Advanced Use</summary>
+                <div class="details-content">
+                    <ul>
+                        <li>Once the teeline symbols are displayed at the bottom of the screen, notice that there are some additional advanced buttons just above the teeline symbols</li>
+                        <li>The <b>Display Options</b> button opens up a series of checkboxes which, if clicked on, will alter the teeline symbols displayed accordingly.</li>
+                        <ul>
+                            <li><font color="red">indicators</font></li>
+                            <li><font color="#B8860B">prefixes</font></li>
+                            <li><font color="#B8860B">suffixes</font></li>
+                            <li><font color="#FF8000">blends</font></li>
+                            <li><font color="#008000">common word abbreviations</font></li>
+                            <li><i>Note. When a checkbox is turned on of off then the teeline symbols are refreshed with that option represented in the displayed teeline.</i></li>
+                            <li>Once any display option is turned on the associated symbols will be shown in the SAME color as the checkbox label</li>
+        
+                            <ul>
+                                <li>
+                                    For example if you click the red label <font color="red">Use Indicators</font> then any teeline symbols 
+                                                        that are now shown as indicators will appear as <font color="red">RED</font> symbols and also <font color="red">RED</font> characters in the compressed text.
+                                </li>
+                            </ul>
+                        </ul>
+                        <li>Zoom <b>IN</b> and <b>OUT</b> will increase/decrease the size of the teeline symbols displayed.</li>
+                    </ul>
+                    <!-- TODO: You can see a tutorial for the app on youtube at https://youtu.be/fEdea9KYeZI or search Youtube for "Teeline Mate Video"<br><br> -->
+                    
+                </div>
+                </details>
+            <details class="level2">
+                <summary>Why did I build this web based tool for Teeline</summary>
+                <div class="details-content">
+                    I originally built an Android and Mac app called Teeline Mate several years ago to help me learn Teeline ( https://youtu.be/fEdea9KYeZI or search Youtube for "Teeline Mate Video")<br><br>
+                    It was not able to be used on Apple iPads and iPhones so I decided to take the plunge and rebuild the functionality in a web tool.<br><br>
+                    I hope this tool will help people better understand teeline.<br><br>
+
+                    Please note that this tool represents my understanding of standard teeline. Expert Teeline writers have their own custom abbreviations and blends so not all Teeline rendered in this app will necessarily match teeline examples in books and tutorials out there on the web.
+                </div>
+            </details>
+            <details class="level2">
+                <summary>About</summary>
+                <div class="details-content">
+                    This web site is hosted on github pages<br>
+                    source code is available <a href="https://github.com/adxsoft/teelinematetool">here</a>
+                    <!-- TODO: You can see a tutorial for the app on youtube at https://youtu.be/fEdea9KYeZI or search Youtube for "Teeline Mate Video"<br><br> -->
+                </div>
+            </details>
+            <details class="level2">
+                <summary>Release History</summary>
+                <div class="details-content">
+                    v1.0<br>
+                    <ul>
+                        <li>Original release</li>
+                    </ul>
+                </div>
+            </details>
+            <details class="level2">
+                <summary>Licence</summary>
+                <div class="details-content">
+                    This tool is free to use by anyone. 
+        </div>
+    <hr>
+</div>
+    <div>
+        <br>
+        <label>Enter text below or select a sentence then press <b>Show Teeline</b> button-></label><br>         
+        <!-- <input type="text" id="rawtext" name="rawtext" placeholder="Enter your text here" size="100"></input> -->
+        <textarea id="rawtext" name="rawtext" placeholder="Enter your text here"
+        rows="2" cols="100"></textarea> 
+        <br>
+        <select onchange="plotSentenceWordOptions()" name="sentences" id="sentences">
+            <option value="default" selected value>-- select a sentence --</option>
+            <!-- TESTS FOR HEIGHT OF LETTERS AT START OF WORD OR WITHIN A WORD -->
+            <!-- <option>ARAB BRAT</option> // DONE:
+            <option>BRAIN RUBBER</option> // DONE:
+            <option>CLAIM RACIAL</option> // DONE:
+            <option>DARE RAIDED</option> // DONE:
+            <option>ECHO BREED</option> // DONE:
+            <option>FRENCH OFFER</option> // DONE:
+            <option>GLUE RAGING</option> // DONE: -->
+            <option>HOTEL ABHOR</option> //TODO: should the H within a word be on the line otherwise could be mistken for a P
+            <!-- <option>INSECT CRIME</option> // DONE: -->
+            <option>JULIAN MAJOR</option> //DONE: J should from the A
+            <!-- <option>KING MAKER</option> // DONE: 
+            <option>LOVER ALLIANCE</option> // DONE:
+            <option>MANDATE CRIME</option> // DONE:
+            <option>NEVER WINS</option> // DONE:
+            <option>OCHRE BROOM</option> // DONE:
+            <option>PERIOD RAPPER</option> // DONE: -->
+            <!-- <option>QUEEN EQUAL</option> // DONE:
+            <option>ROMEO WARS</option> // DONE:
+            <option>SINK RAISIN</option> // DONE:
+            <option>TARNISH WATER</option> // DONE:
+            <option>UNDER BURN</option> // DONE: -->
+            <!-- <option>VIRGO RAVEN</option> // DONE:
+            <option>WATER POWER</option> // DONE:
+            <option>XRAY SIXER</option> // DONE:
+            <option>YELLOW LAYER</option> // DONE:
+            <option>ZEBRA BRAZEN</option> // DONE:
+            -->
+            <!-- TESTS FOR HEIGHT OF BLENDS AT START OF WORD OR WITHIN A WORD -->
+            <!-- <option>CMA ACME</option> //DONE:
+            <option>CNR DECN</option> // DONE:
+            <option>DNA PARDN</option> // DONE:
+            <option>DRUM ADRE</option> // DONE:
+            <option>FBR AFBE</option> // DONE:
+            <option>FLR WFL</option> // DONE:
+            <option>FMA AFMR</option> // DONE:
+            <option>FRD AFRD</option> // DONE:
+            <option>HVNT SHVS</option> // DONE:
+            <option>LRK BLRT</option> // DONE:
+            <option>MRVR AMRKA</option> // DONE:
+            <option>PLRL APLS</option> // DONE:
+            <option>THD BTHS</option> // DONE:
+            <option>TRFR MTRIC</option> // DONE:
+            <option>THRASH OTHRS</option> // DONE:
+            <option>TNDING RTNLR</option> // DONE:
+            <option>WRAG VWRS</option> // DONE: -->
+            
+            <!-- TESTS FOR HEIGHT OF INDICATORS AT START OF WORD OR WITHIN A WORD -->
+            <option>AFAR FARM</option> // DONE:
+            <option>ENTER FEMALE</option> // DONE::
+            <option>INSIDE DRIVEL</option> // DONE:
+            <option>CHARM RACHEL</option> // DONE:
+            <option>TCHAR RATCHEL</option> // DONE:
+            <option>SHIN RASHER</option> // DONE:
+            <option>WHERE NOWHERE</option> // DONE:
+
+
+
+            <option>THE BOY STOOD ON THE BURNING DECK</option>
+            <option>HIS FEET WERE FULL OF BLISTERS</option>
+            <option>HE HAD NO TROUSERS TO HIS BOT</option>
+            <option>HE HAD TO WEAR HIS SISTERS</option>
+            <option>Indicators are colored red</option>
+            <option>Blends are colored orange</option>
+            <option>Abbreviations are colored green</option>
+            <option>every good boy deserves favour</option>
+            <option>the boy stood on the burning deck</option>
+            <option>his feet were full of blisters</option>
+            <option>he had no trousers to his bot he had to wear his sisters</option>
+            <option>god save our gracious queen</option>
+            <option>Our father who art in heaven hallowed be thy name</option>
+            <option>The Sun is the star at the center of the Solar System. It is a nearly perfect sphere of hot plasma</option>
+            <option>Earth is the third planet from the Sun and the only object in the Universe known to harbor life</option>
+            <option>Here was once a velveteen rabbit, and in the beginning he was really splendid. </option>
+            <option>He was fat and bunchy, as a rabbit should be</option>
+            <option>his coat was spotted brown and white</option>
+            <option>he had real thread whiskers, and his ears were lined with pink sateen</option>
+            <option>On Christmas morning, when he sat wedged in the top of the Boy s stocking</option>
+            <option>with a sprig of holly between his paws the effect was charming</option>
+               <!-- <option>the</option>
+                <option>of</option>
+                <option>to</option>
+                <option>and</option>
+                <option>a</option>
+                <option>in</option>
+                <option>is</option>
+                <option>it</option>
+                <option>you</option>
+                <option>that</option>
+                <option>he</option>
+                <option>was</option>
+                <option>for</option>
+                <option>on</option>
+                <option>are</option>
+                <option>with</option>
+                <option>as</option>
+                <option>I</option>
+                <option>his</option>
+                <option>they</option>
+                <option>be</option>
+                <option>at</option>
+                <option>one</option>
+                <option>have</option>
+                <option>this</option>
+                <option>from</option>
+                <option>or</option>
+                <option>had</option>
+                <option>by</option>
+                <option>hot</option>
+                <option>but</option>
+                <option>some</option>
+                <option>what</option>
+                <option>there</option>
+                <option>we</option>
+                <option>can</option>
+                <option>out</option>
+                <option>other</option>
+                <option>were</option>
+                <option>all</option>
+                <option>your</option>
+                <option>when</option>
+                <option>up</option>
+                <option>use</option>
+                <option>word</option>
+                <option>how</option>
+                <option>said</option>
+                <option>an</option>
+                <option>each</option>
+                <option>she</option>
+                <option>which</option>
+                <option>do</option>
+                <option>their</option>
+                <option>time</option>
+                <option>if</option>
+                <option>will</option>
+                <option>way</option>
+                <option>about</option>
+                <option>many</option>
+                <option>then</option>
+                <option>them</option>
+                <option>would</option>
+                <option>write</option>
+                <option>like</option>
+                <option>so</option>
+                <option>these</option>
+                <option>her</option>
+                <option>long</option>
+                <option>make</option>
+                <option>thing</option>
+                <option>see</option>
+                <option>him</option>
+                <option>two</option>
+                <option>has</option>
+                <option>look</option>
+                <option>more</option>
+                <option>day</option>
+                <option>could</option>
+                <option>go</option>
+                <option>come</option>
+                <option>did</option>
+                <option>my</option>
+                <option>sound</option>
+                <option>no</option>
+                <option>most</option>
+                <option>number</option>
+                <option>who</option>
+                <option>over</option>
+                <option>know</option>
+                <option>water</option>
+                <option>than</option>
+                <option>call</option>
+                <option>first</option>
+                <option>people</option>
+                <option>may</option>
+                <option>down</option>
+                <option>side</option>
+                <option>been</option>
+                <option>now</option>
+                <option>find</option>
+                <option>any</option>
+                <option>new</option>
+                <option>work</option>
+                <option>part</option>
+                <option>take</option>
+                <option>get</option>
+                <option>place</option>
+                <option>made</option>
+                <option>live</option>
+                <option>where</option>
+                <option>after</option>
+                <option>back</option>
+                <option>little</option>
+                <option>only</option>
+                <option>round</option>
+                <option>man</option>
+                <option>year</option>
+                <option>came</option>
+                <option>show</option>
+                <option>every</option>
+                <option>good</option>
+                <option>me</option>
+                <option>give</option>
+                <option>our</option>
+                <option>under</option>
+                <option>name</option>
+                <option>very</option>
+                <option>through</option>
+                <option>just</option>
+                <option>form</option>
+                <option>much</option>
+                <option>great</option>
+                <option>think</option>
+                <option>say</option>
+                <option>help</option>
+                <option>low</option>
+                <option>line</option>
+                <option>before</option>
+                <option>turn</option>
+                <option>cause</option>
+                <option>same</option>
+                <option>mean</option>
+                <option>differ</option>
+                <option>move</option>
+                <option>right</option>
+                <option>boy</option>
+                <option>old</option>
+                <option>too</option>
+                <option>does</option>
+                <option>tell</option>
+                <option>sentence</option>
+                <option>set</option>
+                <option>three</option>
+                <option>want</option>
+                <option>air</option>
+                <option>well</option>
+                <option>also</option>
+                <option>play</option>
+                <option>small</option>
+                <option>end</option>
+                <option>put</option>
+                <option>home</option>
+                <option>read</option>
+                <option>hand</option>
+                <option>port</option>
+                <option>large</option>
+                <option>spell</option>
+                <option>add</option>
+                <option>even</option>
+                <option>land</option>
+                <option>here</option>
+                <option>must</option>
+                <option>big</option>
+                <option>high</option>
+                <option>such</option>
+                <option>follow</option>
+                <option>act</option>
+                <option>why</option>
+                <option>ask</option>
+                <option>men</option>
+                <option>change</option>
+                <option>went</option>
+                <option>light</option>
+                <option>kind</option>
+                <option>off</option>
+                <option>need</option>
+                <option>house</option>
+                <option>picture</option>
+                <option>try</option>
+                <option>us</option>
+                <option>again</option>
+                <option>animal</option>
+                <option>point</option>
+                <option>mother</option>
+                <option>world</option>
+                <option>near</option>
+                <option>build</option>
+                <option>self</option>
+                <option>earth</option>
+                <option>father</option>
+                <option>head</option>
+                <option>stand</option>
+                <option>own</option>
+                <option>page</option>
+                <option>should</option>
+                <option>country</option>
+                <option>found</option>
+                <option>answer</option>
+                <option>school</option>
+                <option>grow</option>
+                <option>study</option>
+                <option>still</option>
+                <option>learn</option>
+                <option>plant</option>
+                <option>cover</option>
+                <option>food</option>
+                <option>sun</option>
+                <option>four</option>
+                <option>thought</option>
+                <option>let</option>
+                <option>keep</option>
+                <option>eye</option>
+                <option>never</option>
+                <option>last</option>
+                <option>door</option>
+                <option>between</option>
+                <option>city</option>
+                <option>tree</option>
+                <option>cross</option>
+                <option>since</option>
+                <option>hard</option>
+                <option>start</option>
+                <option>might</option>
+                <option>story</option>
+                <option>saw</option>
+                <option>far</option>
+                <option>sea</option>
+                <option>draw</option>
+                <option>left</option>
+                <option>late</option>
+                <option>run</option>
+                <option>don't</option>
+                <option>while</option>
+                <option>press</option>
+                <option>close</option>
+                <option>night</option>
+                <option>real</option>
+                <option>life</option>
+                <option>few</option>
+                <option>stop</option>
+                <option>open</option>
+                <option>seem</option>
+                <option>together</option>
+                <option>next</option>
+                <option>white</option>
+                <option>children</option>
+                <option>begin</option>
+                <option>got</option>
+                <option>walk</option>
+                <option>example</option>
+                <option>ease</option>
+                <option>paper</option>
+                <option>often</option>
+                <option>always</option>
+                <option>music</option>
+                <option>those</option>
+                <option>both</option>
+                <option>mark</option>
+                <option>book</option>
+                <option>letter</option>
+                <option>until</option>
+                <option>mile</option>
+                <option>river</option>
+                <option>car</option>
+                <option>feet</option>
+                <option>care</option>
+                <option>second</option>
+                <option>group</option>
+                <option>carry</option>
+                <option>took</option>
+                <option>rain</option>
+                <option>eat</option>
+                <option>room</option>
+                <option>friend</option>
+                <option>began</option>
+                <option>idea</option>
+                <option>fish</option>
+                <option>mountain</option>
+                <option>north</option>
+                <option>once</option>
+                <option>base</option>
+                <option>hear</option>
+                <option>horse</option>
+                <option>cut</option>
+                <option>sure</option>
+                <option>watch</option>
+                <option>color</option>
+                <option>face</option>
+                <option>wood</option>
+                <option>main</option>
+                <option>enough</option>
+                <option>plain</option>
+                <option>girl</option>
+                <option>usual</option>
+                <option>young</option>
+                <option>ready</option>
+                <option>above</option>
+                <option>ever</option>
+                <option>red</option>
+                <option>list</option>
+                <option>though</option>
+                <option>feel</option>
+                <option>talk</option>
+                <option>bird</option>
+                <option>soon</option>
+                <option>body</option>
+                <option>dog</option>
+                <option>family</option>
+                <option>direct</option>
+                <option>pose</option>
+                <option>leave</option>
+                <option>song</option>
+                <option>measure</option>
+                <option>state</option>
+                <option>product</option>
+                <option>black</option>
+                <option>short</option>
+                <option>numeral</option>
+                <option>class</option>
+                <option>wind</option>
+                <option>question</option>
+                <option>happen</option>
+                <option>complete</option>
+                <option>ship</option>
+                <option>area</option>
+                <option>half</option>
+                <option>rock</option>
+                <option>order</option>
+                <option>fire</option>
+                <option>south</option>
+                <option>problem</option>
+                <option>piece</option>
+                <option>told</option>
+                <option>knew</option>
+                <option>pass</option>
+                <option>farm</option>
+                <option>top</option>
+                <option>whole</option>
+                <option>king</option>
+                <option>size</option>
+                <option>heard</option>
+                <option>best</option>
+                <option>hour</option>
+                <option>better</option>
+                <option>TRUE</option>
+                <option>during</option>
+                <option>hundred</option>
+                <option>am</option>
+                <option>remember</option>
+                <option>step</option>
+                <option>early</option>
+                <option>hold</option>
+                <option>west</option>
+                <option>ground</option>
+                <option>interest</option>
+                <option>reach</option>
+                <option>fast</option>
+                <option>five</option>
+                <option>sing</option>
+                <option>listen</option>
+                <option>six</option>
+                <option>table</option>
+                <option>travel</option>
+                <option>less</option>
+                <option>morning</option>
+                <option>ten</option>
+                <option>simple</option>
+                <option>several</option>
+                <option>vowel</option>
+                <option>toward</option>
+                <option>war</option>
+                <option>lay</option>
+                <option>against</option>
+                <option>pattern</option>
+                <option>slow</option>
+                <option>center</option>
+                <option>love</option>
+                <option>person</option>
+                <option>money</option>
+                <option>serve</option>
+                <option>appear</option>
+                <option>road</option>
+                <option>map</option>
+                <option>science</option>
+                <option>rule</option>
+                <option>govern</option>
+                <option>pull</option>
+                <option>cold</option>
+                <option>notice</option>
+                <option>voice</option>
+                <option>fall</option>
+                <option>power</option>
+                <option>town</option>
+                <option>fine</option>
+                <option>certain</option>
+                <option>fly</option>
+                <option>unit</option>
+                <option>lead</option>
+                <option>cry</option>
+                <option>dark</option>
+                <option>machine</option>
+                <option>note</option>
+                <option>wait</option>
+                <option>plan</option>
+                <option>figure</option>
+                <option>star</option>
+                <option>box</option>
+                <option>noun</option>
+                <option>field</option>
+                <option>rest</option>
+                <option>correct</option>
+                <option>able</option>
+                <option>pound</option>
+                <option>done</option>
+                <option>beauty</option>
+                <option>drive</option>
+                <option>stood</option>
+                <option>contain</option>
+                <option>front</option>
+                <option>teach</option>
+                <option>week</option>
+                <option>final</option>
+                <option>gave</option>
+                <option>green</option>
+                <option>oh</option>
+                <option>quick</option>
+                <option>develop</option>
+                <option>sleep</option>
+                <option>warm</option>
+                <option>free</option>
+                <option>minute</option>
+                <option>strong</option>
+                <option>special</option>
+                <option>mind</option>
+                <option>behind</option>
+                <option>clear</option>
+                <option>tail</option>
+                <option>produce</option>
+                <option>fact</option>
+                <option>street</option>
+                <option>inch</option>
+                <option>lot</option>
+                <option>nothing</option>
+                <option>course</option>
+                <option>stay</option>
+                <option>wheel</option>
+                <option>full</option>
+                <option>force</option>
+                <option>blue</option>
+                <option>object</option>
+                <option>decide</option>
+                <option>surface</option>
+                <option>deep</option>
+                <option>moon</option>
+                <option>island</option>
+                <option>foot</option>
+                <option>yet</option>
+                <option>busy</option>
+                <option>test</option>
+                <option>record</option>
+                <option>boat</option>
+                <option>common</option>
+                <option>gold</option>
+                <option>possible</option>
+                <option>plane</option>
+                <option>age</option>
+                <option>dry</option>
+                <option>wonder</option>
+                <option>laugh</option>
+                <option>thousand</option>
+                <option>ago</option>
+                <option>ran</option>
+                <option>check</option>
+                <option>game</option>
+                <option>shape</option>
+                <option>yes</option>
+                <option>hot</option>
+                <option>miss</option>
+                <option>brought</option>
+                <option>heat</option>
+                <option>snow</option>
+                <option>bed</option>
+                <option>bring</option>
+                <option>sit</option>
+                <option>perhaps</option>
+                <option>fill</option>
+                <option>east</option>
+                <option>weight</option>
+                <option>language</option>
+                <option>am</option> -->
+        </select> 
+        <br>
+        <br>
+        <button id="showteelinetext_button" class="btn-showteeline" onclick="plotRawText()">Show Teeline</button>
+        <button id="cleartext_button" onclick="clearText()">Clear</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="alphabet_button" onclick="plotAlphabet()">Alphabet</button>       
+        <button id="symbols_button" onclick="showSymbols()">Special Symbols</button>       
+        <button id="" onclick="showAbbreviations()">Abbreviated Words</button>       
+        <br>
+        <br>
+    <div hidden>
+        <textarea id="compressedtext" name="compressedtext"
+        rows="2" cols="360"></textarea>
+    </div>
+    <div id="compressionarea">  
+        <div id="compressedtextincolor" class="compressedtextincolor" contenteditable="false">
+        </div>
+    </div>
+    <div id="teelinealphabet" hidden>
+        <label>Letters and Indicators</label>
+        <br>
+        <button onclick="plotSentence(' A')">A*</button>
+        <button onclick="plotSentence('B')">B</button>
+        <button onclick="plotSentence('C')">C*</button>
+        <button onclick="plotSentence('D')">D</button>
+        <button onclick="plotSentence('E')">E*</button>
+        <button onclick="plotSentence('F')">F</button>
+        <button onclick="plotSentence('G')">G*</button>
+        <button onclick="plotSentence('H')">H</button>
+        <button onclick="plotSentence('I')">I*</button>
+        <button onclick="plotSentence('J')">J</button>
+        <button onclick="plotSentence('K')">K</button>
+        <button onclick="plotSentence('L')">L</button>
+        <button onclick="plotSentence('M')">M*</button>
+        <button onclick="plotSentence('N')">N*</button>
+        <button onclick="plotSentence('O')">O</button><br>
+        <button onclick="plotSentence('P')">P</button>
+        <button onclick="plotSentence('Q')">Q</button>
+        <button onclick="plotSentence('R')">R</button>
+        <button onclick="plotSentence('S')">S*</button>
+        <button onclick="plotSentence('T')">T*</button>
+        <button onclick="plotSentence('U')">U</button>
+        <button onclick="plotSentence(' V')">V</button>
+        <button onclick="plotSentence('W')">W</button>
+        <button onclick="plotSentence('X')">X</button>
+        <button onclick="plotSentence('Y')">Y</button>
+        <button onclick="plotSentence('Z')">Z</button>
+        <button onclick="plotSentence('.')">.</button>
+        <button onclick="plotSentence(',')">,</button>
+        <button onclick="plotSentence('WORDS ARE SPACED OUT')">Space</button>
+        
+        <!-- <label>Cycle Letters</label>
+        <button onclick="addSecondLetter()">2</button>
+        <button onclick="addThirdLetter()">3</button>
+        <button onclick="addFourthLetter()">4</button>
+        <button onclick="addFifthLetter()">5</button>
+        <button onclick="addSixthLetter()">6</button> -->
+        
+        <br> 
+        <label><small>* Has indicator alternative</small></label>
+        <hr>
+    </div>
+    <div id="abbreviations" hidden>
+        <br>
+        <label><font color="#008000">Abbreviated Words</font></label>
+        <button onclick="plotSymbol('AND', 'N-ABBR')">and</button>
+        <button onclick="plotSymbol('ARE', 'R-ABBR')">are</button>
+        <button onclick="plotSymbol('AN', 'N-ABBR')">an</button>
+        <button onclick="plotSymbol('AT', 'T-ABBR')">at</button>
+        <button onclick="plotSymbol('BE', 'B-ABBR')">be</button>
+        <button onclick="plotSymbol('DO', 'D-ABBR')">do</button>
+        <button onclick="plotSymbol('EQUAL', 'Q-ABBR')">equal</button>
+        <button onclick="plotSymbol('FROM', 'F-ABBR')">from</button>
+        <button onclick="plotSymbol('GO', 'G-ABBR')">go</button>
+        <button onclick="plotSymbol('HE', 'H-ABBR')">he</button>
+        <button onclick="plotSymbol('IN', 'N-ABBR')">in</button>
+        <button onclick="plotSymbol('IS', 'S-ABBR')">is</button>
+        <button onclick="plotSymbol('IT', 'T-ABBR')">it</button>
+        <button onclick="plotSymbol('KIND', 'K-ABBR')">kind</button>
+        <button onclick="plotSymbol('LETTER', 'L-ABBR')">letter</button>
+        <button onclick="plotSymbol('ME', 'M-ABBR')">me</button>
+        <button onclick="plotSymbol('OF', 'O-ABBR')">of</button>
+        <button onclick="plotSymbol('ONCE', 'ONCE-ABBR')">once</button>
+        <button onclick="plotSymbol('OUR', 'OUR-ABBR')">our</button>
+        <button onclick="plotSymbol('OUT', 'OUT-ABBR')">out</button>
+        <button onclick="plotSymbol('PAGE', 'P-ABBR')">page</button>
+        <button onclick="plotSymbol('QUESTION', 'Q-ABBR')">question</button>
+        <button onclick="plotSymbol('SOUTH', 'S-ABBR')">south</button>
+        <button onclick="plotSymbol('THE', 'THE-ABBR')">the</button>
+        <button onclick="plotSymbol('THEY', 'THEY-ABBR')">they</button>
+        <button onclick="plotSymbol('TO', 'T-ABBR')">to</button>
+        <button onclick="plotSymbol('VERY', 'V-ABBR')">very</button>
+        <button onclick="plotSymbol('WE', 'W-ABBR')">we</button>
+        <button onclick="plotSymbol('YOU', 'Y-ABBR')">you</button>
+        <button onclick="plotSymbol('YOUR', 'Y-ABBR')">your</button>
+        <hr>
+    </div>
+
+    <div id="teelinesymbols" hidden> 
+        <br>   
+        <label><font color="red">Indicators</font></label>
+        <button onclick="plotSymbol('A', 'A-INDICATOR')">a</button>
+        <button onclick="plotSymbol('E', 'E-INDICATOR')">e</button>
+        <button onclick="plotSymbol('I', 'I-INDICATOR')">i</button>
+        <button onclick="plotSymbol('CH', 'CH-INDICATOR')">ch</button>
+        <button onclick="plotSymbol('SH', 'SH-INDICATOR')">sh</button>
+        <button onclick="plotSymbol('TCH', 'TCH-INDICATOR')">tch</button>
+        <button onclick="plotSymbol('WH', 'WH-INDICATOR')">wh</button>
+        <br>
+        <br>
+        <label><font color="#FF8000">Blends</font></label>
+        <button onclick="plotSymbol('CM', 'CM-BLEND')">cm</button>
+        <button onclick="plotSymbol('CN', 'CN-BLEND')">cn</button>
+        <button onclick="plotSymbol('DN', 'DN-BLEND')">dn</button>
+        <button onclick="plotSymbol('DR', 'DR-BLEND')">dr</button>
+        <button onclick="plotSymbol('FB', 'FB-BLEND')">fb</button>
+        <button onclick="plotSymbol('FL', 'FL-BLEND')">fl</button>
+        <button onclick="plotSymbol('FM', 'FM-BLEND')">fm</button>
+        <button onclick="plotSymbol('FR', 'FR-BLEND')">fr</button>
+        <button onclick="plotSymbol('HV', 'HV-BLEND')">hv</button>
+        <button onclick="plotSymbol('LR', 'LR-BLEND')">lr</button>
+        <button onclick="plotSymbol('MR', 'MR-BLEND')">mr</button>
+        <button onclick="plotSymbol('PL', 'PL-BLEND')">pl</button>
+        <button onclick="plotSymbol('TH', 'TH-BLEND')">th</button>
+        <button onclick="plotSymbol('THR', 'THR-BLEND')">thr</button>
+        <button onclick="plotSymbol('TR', 'TR-BLEND')">tr</button>
+        <button onclick="plotSymbol('TN', 'TN-BLEND')">tn</button>
+        <button onclick="plotSymbol('WR', 'WR-BLEND')">wr</button>
+        <br>
+        <br>
+        <label><font color="#B8860B">Prefixes</font></label>
+        <button onclick="plotSymbol('CH', 'CH-PREFIX')">ch</button>
+        <button onclick="plotSymbol('CHR', 'CHR-PREFIX')">chr</button>
+        <button onclick="plotSymbol('COM', 'COM-PREFIX')">com</button>
+        <button onclick="plotSymbol('CON', 'CON-PREFIX')">con</button>
+        <button onclick="plotSymbol('EX', 'EX-PREFIX')">ex</button>
+        <br>
+        <br>
+        <label><font color="#B8860B">Suffixes</font></label>
+        <button onclick="plotSymbol('ABLE', 'A-SUFFIX')">able</button>
+        <button onclick="plotSymbol('AE', 'A-SUFFIX')">ae</button>       
+        <button onclick="plotSymbol('ANT', 'ANT-SUFFIX')">ant</button>    
+        <button onclick="plotSymbol('AY', 'A-SUFFIX')">ay</button>       
+        <button onclick="plotSymbol('CH', 'CH-SUFFIX')">ch</button>      
+        <button onclick="plotSymbol('CIAL', 'CIAL-SUFFIX')">cial</button>  
+        <button onclick="plotSymbol('EE', 'E-SUFFIX')">ee</button>       
+        <button onclick="plotSymbol('ENT', 'ANT-SUFFIX')">ent</button>    
+        <button onclick="plotSymbol('EVER', 'V-SUFFIX')">ever</button>     
+        <button onclick="plotSymbol('IBLE', 'I-SUFFIX')">ible</button>     
+        <button onclick="plotSymbol('IE', 'I-SUFFIX')">ie</button>      
+        <button onclick="plotSymbol('ING', 'ING-SUFFIX')">ing</button>    
+        <button onclick="plotSymbol('MENT', 'M-SUFFIX')">ment</button>     
+        <button onclick="plotSymbol('OE', 'O-SUFFIX')">oe</button>       
+        <button onclick="plotSymbol('OO', 'O-SUFFIX')">oo</button>       
+        <button onclick="plotSymbol('OY', 'Y-SUFFIX')">oy</button>       
+        <button onclick="plotSymbol('SH', 'SH-SUFFIX')">sh</button>      
+        <button onclick="plotSymbol('SHL', 'SHL-SUFFIX')">shl</button>    
+        <button onclick="plotSymbol('SHIP', 'SHIP-SUFFIX')">ship</button>  
+        <button onclick="plotSymbol('TCH', 'CH-SUFFIX')">tch</button>     
+        <button onclick="plotSymbol('TIAL', 'TIAL-SUFFIX')">tial</button>  
+        <button onclick="plotSymbol('TION', 'N-SUFFIX')">tion</button>     
+        <button onclick="plotSymbol('UE', 'U-SUFFIX')">ue</button>       
+        <button onclick="plotSymbol('Y', 'I-SUFFIX')">y</button>
+        <br>
+        <br>
+
+                <hr>
+    </div>
+    
+    <div id="options" hidden>
+        <input type="checkbox" id="usejoinedlettersoption" name="usejoinedlettersoption" checked  onclick="plotRawText()">
+        <label for="usejoinedlettersoption">Join Letters</label>
+        <input type="checkbox" id="usecompressionoption" name="usecompressionoption" checked  onclick="plotRawText()">
+        <label for="usecompressionoption">Use Compression</label>
+        <input type="checkbox" id="useblackgray" name="useblackgray" onclick="plotRawText()">
+        <label for="useblackgray">Black/Gray</label>
+        <input type="checkbox" id="showlabels" name="showlabels" checked onclick="plotRawText()">
+        <label for="useblackgray">Show Labels</label><br>
+        
+        <hr>
+        <input type="checkbox" id="useindicatorsoption" name="useindicatorsoption"  onclick="plotRawText()">
+        <label for="useindicatorsoption"><font color="#FF0000">Use Indicators</font></label>
+        <input type="checkbox" id="useabbreviationsoption" name="useabbreviationsoption"  onclick="plotRawText()">
+        <label for="useabbreviationsoption"><font color="#008000">Use Abbreviations</font></label>
+        <!-- <br> -->
+        <input type="checkbox" id="useblendsoption" name="useblendsoption"  onclick="plotRawText()">
+        <label for="useblendsoption"><font color="#FF8000">Use Blends</font></label>
+        <!-- <br> -->
+        <input type="checkbox" id="useprefixesoption" name="useprefixesoption"  onclick="plotRawText()">
+        <label for="useprefixesoption"><font color="#B8860B">Use Prefixes</font></label>
+        <!-- <br> -->
+        <input type="checkbox" id="usesuffixesoption" name="usesuffixesoption"  onclick="plotRawText()">
+        <label for="usesuffixesoption"><font color="#B8860B">Use Suffixes</font></label>
+        <!-- <br> -->
+        <br>
+        <label><small><font color="#FF00CC">Note. Fixed Letters are H,P,Q</font></small></label>
+        <!-- <input type="checkbox" id="slowletterdrawingoption" name="slowletterdrawingoption">
+        <label for="slowletterdrawingoption">Slow Letter Drawing</label>
+        <br> -->
+    </div>
+    <div id="teelinedisplay" hidden>
+        <hr>
+        <label>Zoom   </label><button onclick="ZoomIn()">IN</button>
+        <button onclick="ZoomOut()">OUT</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button id="options_button" onclick="toggleOptions()">Display Options</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <!-- <label>Current Word at mouse position  </label">&nbsp;&nbsp;<b><label id="hoverlabel"  class="currentword"></label></b> -->
+        <hr>
+        <div id="container" class="container">
+            <canvas id="canvas" width="3000" height="300" >
+            Your browser does not support the HTML5 canvas tag.</canvas>  
+        </div>
+</div>
+    <script src="./index.js">
+</script>    
+</head>
+<body>
+    
+</body>
+</html>

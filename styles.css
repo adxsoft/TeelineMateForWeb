@@ -1,0 +1,89 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.container {
+    width: 1920px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid;
+}
+
+.main {
+    display: flex;
+}
+
+.btn-highlight {
+    background-color: rgba(40, 30, 237, 0.528);
+    color: rgba(244, 244, 248, 0.912);
+    font-weight: bold;
+}
+
+.btn-showteeline {
+    background-color: rgb(204, 194, 8);
+    color: rgba(2, 2, 2, 0.912);
+    font-weight: bold;
+}
+
+.currentword {
+    background-color: rgb(242, 209, 78);
+    color: rgba(3, 2, 2, 0.912);
+    font-weight: bold;
+    font-size: large;
+    padding: 4px 5px 1px 4px;
+}
+
+.compressedtextincolor {
+    background-color: rgb(231, 231, 227);
+    color: rgba(3, 2, 2, 0.912);
+    font-size: large;
+    border: 1px solid rgb(1, 1, 1);
+}
+
+canvas {
+    display: block;
+}
+
+/* Details/Summary Indentation levels */
+
+.level1 {
+    /* list-style: disc; */
+    background-color: var(--current-bg);
+    color: var(--current-fg);
+    padding: rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.level2 {
+    /* list-style: disc; */
+    background-color: var(--current-bg);
+    color: var(--current-fg);
+    padding: rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.level3 {
+    /* list-style: disc; */
+    background-color: var(--current-bg);
+    color: var(--current-fg);
+    padding: rem;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.details-content {
+    background-color: var(--current-bg);
+    color: var(--current-fg);
+    padding: 1rem;
+    font-size: 1rem;
+    overflow-wrap: break-word;
+    cursor: pointer;
+}
